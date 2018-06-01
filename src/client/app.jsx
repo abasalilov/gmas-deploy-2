@@ -18,7 +18,6 @@ import injectTapEventPlugin from "react-tap-event-plugin";
 //
 
 window.webappStart = () => {
-  // 
   injectTapEventPlugin(); // https://github.com/callemall/material-ui/issues/4670
   const initialState = window.__PRELOADED_STATE__;
   const jsContent = document.querySelector(".js-content");

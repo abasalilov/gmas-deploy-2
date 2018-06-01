@@ -1,322 +1,8 @@
-2018-06-01T05:24:58.341Z - info: No custom webpack config webpack.config.js found in dirs CWD; CWD/archetype/config/webpack
-2018-06-01T05:24:58.538Z - info: Entry point configuration /Users/al/Desktop/universal-material-ui/src/client/entry.config.js is not found, using default entry point...
-2018-06-01T05:24:59.349Z - info: PWA enabled with config from /Users/al/Desktop/universal-material-ui/config/sw-config.js
-2018-06-01T05:24:59.351Z - verbose: add-dll-references configurations {
-  "cache": true,
-  "plugins": [
-    {
-      "options": {
-        "options": {
-          "debug": false
-        },
-        "test": {}
-      }
-    },
-    {
-      "filename": "[name].style.[hash].css",
-      "id": 1,
-      "options": {}
-    },
-    {
-      "options": {
-        "assetNameRegExp": {},
-        "cssProcessorOptions": {},
-        "canPrint": true
-      },
-      "lastCallInstance": {
-        "options": {
-          "assetProcessors": [
-            {
-              "phase": "compilation.optimize-chunk-assets",
-              "regExp": {}
-            }
-          ],
-          "canPrint": true
-        },
-        "deleteAssetsMap": {}
-      }
-    },
-    {
-      "options": {
-        "size": 4000,
-        "preserve": true,
-        "defer": true
-      }
-    },
-    {
-      "options": {
-        "options": {
-          "context": "/Users/al/Desktop/universal-material-ui/src",
-          "stylus": {
-            "use": []
-          }
-        },
-        "test": {}
-      }
-    },
-    {
-      "opts": {
-        "filename": "../server/stats.json",
-        "fields": [
-          "assetsByChunkName",
-          "assets"
-        ]
-      }
-    },
-    {
-      "config": {
-        "valid": false
-      },
-      "options": {
-        "assetsFile": "../isomorphic-assets.json",
-        "webpackDev": {
-          "url": "http://localhost:2992",
-          "addUrl": false
-        }
-      }
-    },
-    {
-      "options": {
-        "prefix": "icons-[hash]/",
-        "emitStats": true,
-        "statsFilename": "../server/iconstats.json",
-        "persistentCache": true,
-        "inject": false,
-        "background": "#FFFFFF",
-        "logo": "/Users/al/Desktop/universal-material-ui/src/client/images/electrode.png",
-        "title": "electrode-react-sample-material-ui",
-        "icons": {
-          "android": true,
-          "appleIcon": true,
-          "appleStartup": true,
-          "coast": false,
-          "favicons": true,
-          "firefox": true,
-          "opengraph": false,
-          "twitter": false,
-          "yandex": false,
-          "windows": false
-        }
-      }
-    },
-    {
-      "fields": {
-        "short_name": "PWA",
-        "theme_color": "#FFFFFF"
-      },
-      "regex": {}
-    },
-    {
-      "config": {},
-      "options": {
-        "cacheId": "electrode-react-sample-material-ui",
-        "filename": "service-worker.js",
-        "importScripts": [],
-        "staticFileGlobsIgnorePatterns": [],
-        "mergeStaticsConfig": false,
-        "minify": false,
-        "staticFileGlobs": [
-          "dist/**/*"
-        ],
-        "stripPrefix": "dist/js/",
-        "filepath": "dist/sw.js",
-        "maximumFileSizeToCacheInBytes": 4194304,
-        "skipWaiting": false,
-        "noWarning": true,
-        "runtimeCaching": [
-          {
-            "handler": "fastest",
-            "urlPattern": {}
-          }
-        ]
-      },
-      "overrides": {},
-      "warnings": []
-    }
-  ],
-  "context": "/Users/al/Desktop/universal-material-ui/src/client",
-  "entry": "./app.jsx",
-  "output": {
-    "path": "/Users/al/Desktop/universal-material-ui/dist/js",
-    "pathinfo": false,
-    "publicPath": "/js/",
-    "chunkFilename": "[hash].[name].js",
-    "filename": "[name].bundle.[hash].js"
-  },
-  "resolve": {
-    "alias": {},
-    "symlinks": true,
-    "plugins": [
-      {
-        "source": "module",
-        "path": "node_modules",
-        "target": "resolve"
-      }
-    ],
-    "modules": [
-      "/Users/al/Desktop/universal-material-ui/src",
-      "/Users/al/Desktop/universal-material-ui",
-      "node_modules"
-    ],
-    "extensions": [
-      ".js",
-      ".jsx",
-      ".json"
-    ]
-  },
-  "resolveLoader": {
-    "symlinks": true,
-    "modules": [
-      "/Users/al/Desktop/universal-material-ui/lib",
-      "/Users/al/Desktop/universal-material-ui"
-    ],
-    "plugins": [
-      {
-        "source": "module",
-        "path": "node_modules",
-        "target": "resolve"
-      }
-    ]
-  },
-  "module": {
-    "rules": [
-      {
-        "_name": "babel",
-        "test": {},
-        "use": [
-          {
-            "loader": "babel-loader"
-          }
-        ]
-      },
-      {
-        "_name": "extract-css-modules",
-        "test": {},
-        "loader": [
-          {
-            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/extract-text-webpack-plugin/dist/loader.js",
-            "options": {
-              "omit": 1,
-              "remove": true,
-              "publicPath": ""
-            }
-          },
-          {
-            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/style-loader/index.js"
-          },
-          {
-            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/css-loader/index.js?modules&localIdentName=[name]__[local]___[hash:base64:5]&-autoprefixer"
-          },
-          {
-            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/postcss-loader/index.js"
-          }
-        ]
-      },
-      {
-        "_name": "extract-css-scss",
-        "test": {},
-        "use": [
-          {
-            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/extract-text-webpack-plugin/dist/loader.js",
-            "options": {
-              "omit": 1,
-              "remove": true,
-              "publicPath": ""
-            }
-          },
-          {
-            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/style-loader/index.js"
-          },
-          {
-            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/css-loader/index.js?modules&localIdentName=[name]__[local]___[hash:base64:5]&-autoprefixer"
-          },
-          {
-            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/postcss-loader/index.js"
-          },
-          {
-            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/sass-loader/lib/loader.js"
-          }
-        ]
-      },
-      {
-        "_name": "extract-css-stylus",
-        "test": {},
-        "use": [
-          {
-            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/extract-text-webpack-plugin/dist/loader.js",
-            "options": {
-              "omit": 1,
-              "remove": true,
-              "publicPath": ""
-            }
-          },
-          {
-            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/style-loader/index.js"
-          },
-          {
-            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/css-loader/index.js?modules&localIdentName=[name]__[local]___[hash:base64:5]&-autoprefixer"
-          },
-          {
-            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/postcss-loader/index.js"
-          },
-          {
-            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/stylus-relative-loader/index.js"
-          }
-        ]
-      },
-      {
-        "_name": "font-woff",
-        "test": {},
-        "use": [
-          {
-            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/url-loader/index.js",
-            "options": {
-              "limit": 1000,
-              "mimetype": "application/font-woff"
-            }
-          },
-          "/Users/al/Desktop/universal-material-ui/node_modules/isomorphic-loader/index.js"
-        ]
-      },
-      {
-        "_name": "font-file",
-        "test": {},
-        "use": [
-          "/Users/al/Desktop/universal-material-ui/node_modules/file-loader/index.js",
-          "/Users/al/Desktop/universal-material-ui/node_modules/isomorphic-loader/index.js"
-        ]
-      },
-      {
-        "_name": "image",
-        "test": {},
-        "use": [
-          {
-            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/electrode-cdn-file-loader/index.js",
-            "options": {
-              "limit": 10000
-            }
-          },
-          "/Users/al/Desktop/universal-material-ui/node_modules/isomorphic-loader/index.js"
-        ]
-      },
-      {
-        "_name": "manifest",
-        "test": {},
-        "use": [
-          {
-            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/file-loader/index.js",
-            "options": {
-              "name": "manifest.json"
-            }
-          },
-          "/Users/al/Desktop/universal-material-ui/node_modules/web-app-manifest-loader/index.js"
-        ]
-      }
-    ]
-  }
-}
-2018-06-01T05:24:59.400Z - info: Disabling NodeSourcePlugin for production
-2018-06-01T05:24:59.401Z - verbose: Final Webpack config {
+2018-06-01T15:53:48.151Z - info: No custom webpack config webpack.config.dev.js found in dirs CWD; CWD/archetype/config/webpack
+2018-06-01T15:53:48.162Z - info: Entry point configuration /Users/al/Desktop/gmas-deploy-2/src/client/entry.config.js is not found, using default entry point...
+2018-06-01T15:53:48.891Z - info: PWA enabled with config from /Users/al/Desktop/gmas-deploy-2/config/sw-config.js
+2018-06-01T15:53:49.063Z - info: Not disabling NodeSourcePlugin.  NODE_ENV: 'development'
+2018-06-01T15:53:49.065Z - verbose: Final Webpack config {
   "cache": true,
   "plugins": [
     {
@@ -336,26 +22,6 @@
     },
     {
       "options": {
-        "assetNameRegExp": {},
-        "cssProcessorOptions": {},
-        "canPrint": true
-      },
-      "lastCallInstance": {
-        "options": {
-          "assetProcessors": [
-            {
-              "phase": "compilation.optimize-chunk-assets",
-              "regExp": {}
-            }
-          ],
-          "canPrint": true
-        },
-        "deleteAssetsMap": {}
-      },
-      "__name": "OptimizeCssAssetsPlugin"
-    },
-    {
-      "options": {
         "size": 4000,
         "preserve": true,
         "defer": true
@@ -365,7 +31,7 @@
     {
       "options": {
         "options": {
-          "context": "/Users/al/Desktop/universal-material-ui/src",
+          "context": "/Users/al/Desktop/gmas-deploy-2/src",
           "stylus": {
             "use": []
           }
@@ -405,7 +71,7 @@
         "persistentCache": true,
         "inject": false,
         "background": "#FFFFFF",
-        "logo": "/Users/al/Desktop/universal-material-ui/src/client/images/electrode.png",
+        "logo": "/Users/al/Desktop/gmas-deploy-2/src/client/images/electrode.png",
         "title": "electrode-react-sample-material-ui",
         "icons": {
           "android": true,
@@ -459,52 +125,54 @@
       "__name": "SWPrecacheWebpackPlugin"
     },
     {
-      "options": {
-        "sourceMap": true,
-        "compress": {
-          "warnings": false
+      "opts": {
+        "files": [
+          {
+            "asset": {},
+            "output": {
+              "filename": "stats.json"
+            }
+          }
+        ],
+        "output": {
+          "path": "/Users/al/Desktop/gmas-deploy-2/.etmp"
         }
       },
-      "__name": "UglifyJsPlugin"
-    },
-    {
-      "resourceRegExp": {},
-      "newContentRegExp": {},
-      "__name": "ContextReplacementPlugin"
+      "__name": "DiskPlugin"
     },
     {
       "definitions": {
-        "process.env.NODE_ENV": "\"production\""
+        "process.env.NODE_ENV": "\"development\""
       },
       "__name": "DefinePlugin"
     },
     {
-      "sourceMapFilename": "../map/[file].map",
-      "sourceMappingURLComment": "\n//# sourceMappingURL=http://localhost:2992/dist/map/[url]",
+      "sourceMappingURLComment": "\n//# sourceMappingURL=[url]",
       "moduleFilenameTemplate": "webpack:///[resourcePath]",
       "fallbackModuleFilenameTemplate": "webpack:///[resourcePath]?[hash]",
       "options": {
-        "filename": "../map/[file].map",
-        "append": "\n//# sourceMappingURL=http://localhost:2992/dist/map/[url]"
+        "sourceMapFilename": "[file].map"
       },
       "__name": "SourceMapDevToolPlugin"
     },
     {
-      "isWatch": true,
-      "__name": "FailPlugin"
+      "filename": "[name].style.css",
+      "id": 2,
+      "options": {},
+      "__name": "ExtractTextPlugin"
     },
     {
-      "__name": "ProgressPlugin"
+      "__name": "NoEmitOnErrorsPlugin"
     }
   ],
-  "context": "/Users/al/Desktop/universal-material-ui/src/client",
+  "context": "/Users/al/Desktop/gmas-deploy-2/src/client",
   "entry": "./app.jsx",
   "output": {
-    "path": "/Users/al/Desktop/universal-material-ui/dist/js",
+    "path": "/Users/al/Desktop/gmas-deploy-2/dist/js",
     "pathinfo": false,
-    "publicPath": "/js/",
+    "publicPath": "http://localhost:2992/js/",
     "chunkFilename": "[hash].[name].js",
-    "filename": "[name].bundle.[hash].js"
+    "filename": "[name].bundle.dev.js"
   },
   "resolve": {
     "alias": {},
@@ -517,8 +185,8 @@
       }
     ],
     "modules": [
-      "/Users/al/Desktop/universal-material-ui/src",
-      "/Users/al/Desktop/universal-material-ui",
+      "/Users/al/Desktop/gmas-deploy-2/src",
+      "/Users/al/Desktop/gmas-deploy-2",
       "node_modules"
     ],
     "extensions": [
@@ -530,8 +198,8 @@
   "resolveLoader": {
     "symlinks": true,
     "modules": [
-      "/Users/al/Desktop/universal-material-ui/lib",
-      "/Users/al/Desktop/universal-material-ui"
+      "/Users/al/Desktop/gmas-deploy-2/lib",
+      "/Users/al/Desktop/gmas-deploy-2"
     ],
     "plugins": [
       {
@@ -555,7 +223,7 @@
         "test": {},
         "loader": [
           {
-            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/extract-text-webpack-plugin/dist/loader.js",
+            "loader": "/Users/al/Desktop/gmas-deploy-2/node_modules/extract-text-webpack-plugin/dist/loader.js",
             "options": {
               "omit": 1,
               "remove": true,
@@ -563,13 +231,13 @@
             }
           },
           {
-            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/style-loader/index.js"
+            "loader": "/Users/al/Desktop/gmas-deploy-2/node_modules/style-loader/index.js"
           },
           {
-            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/css-loader/index.js?modules&localIdentName=[name]__[local]___[hash:base64:5]&-autoprefixer"
+            "loader": "/Users/al/Desktop/gmas-deploy-2/node_modules/css-loader/index.js?modules&localIdentName=[name]__[local]___[hash:base64:5]&-autoprefixer"
           },
           {
-            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/postcss-loader/index.js"
+            "loader": "/Users/al/Desktop/gmas-deploy-2/node_modules/postcss-loader/index.js"
           }
         ]
       },
@@ -577,7 +245,7 @@
         "test": {},
         "use": [
           {
-            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/extract-text-webpack-plugin/dist/loader.js",
+            "loader": "/Users/al/Desktop/gmas-deploy-2/node_modules/extract-text-webpack-plugin/dist/loader.js",
             "options": {
               "omit": 1,
               "remove": true,
@@ -585,16 +253,16 @@
             }
           },
           {
-            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/style-loader/index.js"
+            "loader": "/Users/al/Desktop/gmas-deploy-2/node_modules/style-loader/index.js"
           },
           {
-            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/css-loader/index.js?modules&localIdentName=[name]__[local]___[hash:base64:5]&-autoprefixer"
+            "loader": "/Users/al/Desktop/gmas-deploy-2/node_modules/css-loader/index.js?modules&localIdentName=[name]__[local]___[hash:base64:5]&-autoprefixer"
           },
           {
-            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/postcss-loader/index.js"
+            "loader": "/Users/al/Desktop/gmas-deploy-2/node_modules/postcss-loader/index.js"
           },
           {
-            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/sass-loader/lib/loader.js"
+            "loader": "/Users/al/Desktop/gmas-deploy-2/node_modules/sass-loader/lib/loader.js"
           }
         ]
       },
@@ -602,7 +270,7 @@
         "test": {},
         "use": [
           {
-            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/extract-text-webpack-plugin/dist/loader.js",
+            "loader": "/Users/al/Desktop/gmas-deploy-2/node_modules/extract-text-webpack-plugin/dist/loader.js",
             "options": {
               "omit": 1,
               "remove": true,
@@ -610,16 +278,16 @@
             }
           },
           {
-            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/style-loader/index.js"
+            "loader": "/Users/al/Desktop/gmas-deploy-2/node_modules/style-loader/index.js"
           },
           {
-            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/css-loader/index.js?modules&localIdentName=[name]__[local]___[hash:base64:5]&-autoprefixer"
+            "loader": "/Users/al/Desktop/gmas-deploy-2/node_modules/css-loader/index.js?modules&localIdentName=[name]__[local]___[hash:base64:5]&-autoprefixer"
           },
           {
-            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/postcss-loader/index.js"
+            "loader": "/Users/al/Desktop/gmas-deploy-2/node_modules/postcss-loader/index.js"
           },
           {
-            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/stylus-relative-loader/index.js"
+            "loader": "/Users/al/Desktop/gmas-deploy-2/node_modules/stylus-relative-loader/index.js"
           }
         ]
       },
@@ -627,48 +295,94 @@
         "test": {},
         "use": [
           {
-            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/url-loader/index.js",
+            "loader": "/Users/al/Desktop/gmas-deploy-2/node_modules/url-loader/index.js",
             "options": {
               "limit": 1000,
               "mimetype": "application/font-woff"
             }
           },
-          "/Users/al/Desktop/universal-material-ui/node_modules/isomorphic-loader/index.js"
+          "/Users/al/Desktop/gmas-deploy-2/node_modules/isomorphic-loader/index.js"
         ]
       },
       {
         "test": {},
         "use": [
-          "/Users/al/Desktop/universal-material-ui/node_modules/file-loader/index.js",
-          "/Users/al/Desktop/universal-material-ui/node_modules/isomorphic-loader/index.js"
+          "/Users/al/Desktop/gmas-deploy-2/node_modules/file-loader/index.js",
+          "/Users/al/Desktop/gmas-deploy-2/node_modules/isomorphic-loader/index.js"
         ]
       },
       {
         "test": {},
         "use": [
           {
-            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/electrode-cdn-file-loader/index.js",
+            "loader": "/Users/al/Desktop/gmas-deploy-2/node_modules/electrode-cdn-file-loader/index.js",
             "options": {
               "limit": 10000
             }
           },
-          "/Users/al/Desktop/universal-material-ui/node_modules/isomorphic-loader/index.js"
+          "/Users/al/Desktop/gmas-deploy-2/node_modules/isomorphic-loader/index.js"
         ]
       },
       {
         "test": {},
         "use": [
           {
-            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/file-loader/index.js",
+            "loader": "/Users/al/Desktop/gmas-deploy-2/node_modules/file-loader/index.js",
             "options": {
               "name": "manifest.json"
             }
           },
-          "/Users/al/Desktop/universal-material-ui/node_modules/web-app-manifest-loader/index.js"
+          "/Users/al/Desktop/gmas-deploy-2/node_modules/web-app-manifest-loader/index.js"
         ]
       }
     ]
   },
-  "node": false
+  "devServer": {
+    "https": false,
+    "disableHostCheck": true,
+    "headers": {
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
 }
-2018-06-01T05:25:13.617Z - info: APP_SRC_DIR set to lib/
+2018-06-01T15:54:02.043Z - info: APP_SRC_DIR set to src/
+2018-06-01T15:54:49.208Z - info: APP_SRC_DIR set to src/
+2018-06-01T15:55:48.660Z - info: APP_SRC_DIR set to src/
+2018-06-01T15:58:06.572Z - info: APP_SRC_DIR set to src/
+2018-06-01T15:58:46.504Z - info: APP_SRC_DIR set to src/
+2018-06-01T15:59:05.999Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:12:18.810Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:12:22.071Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:13:10.306Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:13:23.389Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:14:10.622Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:14:13.648Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:15:24.654Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:16:20.254Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:18:36.208Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:19:34.022Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:19:44.808Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:19:58.363Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:21:11.170Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:21:34.230Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:22:04.402Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:22:15.743Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:23:00.047Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:23:23.172Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:23:26.057Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:27:40.433Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:27:53.952Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:28:23.782Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:28:28.892Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:28:39.974Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:30:59.660Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:34:19.665Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:34:33.520Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:37:45.571Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:38:30.744Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:38:37.387Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:38:46.365Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:39:29.883Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:39:39.035Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:40:06.257Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:40:39.036Z - info: APP_SRC_DIR set to src/

@@ -36,12 +36,14 @@
     "build": "clap build",
     "prod-start": "NODE_ENV=production clap -n -x electrode/build prod",
     "start": "clap dev",
+    "dev": "NODE_ENV=production clap hot",
     "test": "clap test",
     "coverage": "clap check",
     "prod": "echo 'Starting standalone server in PROD mode'; NODE_ENV=production node ./lib/server/",
     "heroku-postbuild": "clap build"
   },
   "dependencies": {
+    "@material-ui/core": "^1.0.0",
     "bluebird": "^3.5.1",
     "electrode-archetype-react-app": "^5.1.4",
     "electrode-archetype-react-app-dev": "^5.1.4",
@@ -53,6 +55,7 @@
     "electrode-static-paths": "^1.1.0",
     "lodash": "^4.17.10",
     "material-ui": "^0.20.1",
+    "prop-types": "^15.6.1",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-tap-event-plugin": "^3.0.3",

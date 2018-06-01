@@ -20,44 +20,51 @@ import "../styles/raleway.css";
 import skeleton from "../styles/skeleton.css";
 import custom from "../styles/custom.css";
 import electrodePng from "../images/electrode.png";
-import DemoStates from "./demo-states";
-import DemoPureStates from "./demo-pure-states";
 import RaisedButton from "material-ui/RaisedButton";
 import { Provider } from "react-redux";
 import rootReducer from "../reducers";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
+import AppBarRight from "./common/AppBarExampleIconMenu";
+import { Login } from "./login";
 import { createStore } from "redux";
+import { withStyles } from "@material-ui/core/styles";
+
+/**/
+
+const styles = {
+  container: {
+    border: "solid red",
+    background: "linear-gradient(to right, #C8EBF9,#CCE9F7)",
+    boxSizing: "border-box",
+    height: "100%",
+    width: "100%"
+  }
+};
+
 const store = createStore(rootReducer, { checked: 0, value: 0 });
 
 /**/
 
-export default () => (
-  <MuiThemeProvider>
-    <Provider store={store}>
-      <div className={custom.container}>
-        {/**/}
+const HomeComponent = props => {
+  const { classes } = props;
+  return (
+    <MuiThemeProvider>
+      <Provider store={store}>
+        <div className={classes.container}>
+          <AppBarRight title={"GMAS Crypto Portal"} />
 
-        <section className={custom.header}>
-          <h2 className={skeleton.title}>
-            Hello from{" "}
-            <a href="https://github.com/electrode-io">
-              {"Electrode"} <img src={electrodePng} />
-            </a>
-          </h2>
-        </section>
+          <section className={custom.header}>
+            <h2 className={skeleton.title}>Login</h2>
+          </section>
 
-        <div className={custom["docs-section"]}>
-          <DemoStates />
+          <section className={custom.header}>
+            <Login />
+          </section>
         </div>
+      </Provider>
+    </MuiThemeProvider>
+  );
+};
 
-        <div className={custom["docs-section"]}>
-          <DemoPureStates />
-        </div>
-
-        <div className={custom["docs-section"]}>
-          <RaisedButton />
-        </div>
-      </div>
-    </Provider>
-  </MuiThemeProvider>
-);
+const Home = withStyles(styles)(HomeComponent);
+export default Home;
