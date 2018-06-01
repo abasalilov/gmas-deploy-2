@@ -1,0 +1,674 @@
+2018-06-01T05:24:58.341Z - info: No custom webpack config webpack.config.js found in dirs CWD; CWD/archetype/config/webpack
+2018-06-01T05:24:58.538Z - info: Entry point configuration /Users/al/Desktop/universal-material-ui/src/client/entry.config.js is not found, using default entry point...
+2018-06-01T05:24:59.349Z - info: PWA enabled with config from /Users/al/Desktop/universal-material-ui/config/sw-config.js
+2018-06-01T05:24:59.351Z - verbose: add-dll-references configurations {
+  "cache": true,
+  "plugins": [
+    {
+      "options": {
+        "options": {
+          "debug": false
+        },
+        "test": {}
+      }
+    },
+    {
+      "filename": "[name].style.[hash].css",
+      "id": 1,
+      "options": {}
+    },
+    {
+      "options": {
+        "assetNameRegExp": {},
+        "cssProcessorOptions": {},
+        "canPrint": true
+      },
+      "lastCallInstance": {
+        "options": {
+          "assetProcessors": [
+            {
+              "phase": "compilation.optimize-chunk-assets",
+              "regExp": {}
+            }
+          ],
+          "canPrint": true
+        },
+        "deleteAssetsMap": {}
+      }
+    },
+    {
+      "options": {
+        "size": 4000,
+        "preserve": true,
+        "defer": true
+      }
+    },
+    {
+      "options": {
+        "options": {
+          "context": "/Users/al/Desktop/universal-material-ui/src",
+          "stylus": {
+            "use": []
+          }
+        },
+        "test": {}
+      }
+    },
+    {
+      "opts": {
+        "filename": "../server/stats.json",
+        "fields": [
+          "assetsByChunkName",
+          "assets"
+        ]
+      }
+    },
+    {
+      "config": {
+        "valid": false
+      },
+      "options": {
+        "assetsFile": "../isomorphic-assets.json",
+        "webpackDev": {
+          "url": "http://localhost:2992",
+          "addUrl": false
+        }
+      }
+    },
+    {
+      "options": {
+        "prefix": "icons-[hash]/",
+        "emitStats": true,
+        "statsFilename": "../server/iconstats.json",
+        "persistentCache": true,
+        "inject": false,
+        "background": "#FFFFFF",
+        "logo": "/Users/al/Desktop/universal-material-ui/src/client/images/electrode.png",
+        "title": "electrode-react-sample-material-ui",
+        "icons": {
+          "android": true,
+          "appleIcon": true,
+          "appleStartup": true,
+          "coast": false,
+          "favicons": true,
+          "firefox": true,
+          "opengraph": false,
+          "twitter": false,
+          "yandex": false,
+          "windows": false
+        }
+      }
+    },
+    {
+      "fields": {
+        "short_name": "PWA",
+        "theme_color": "#FFFFFF"
+      },
+      "regex": {}
+    },
+    {
+      "config": {},
+      "options": {
+        "cacheId": "electrode-react-sample-material-ui",
+        "filename": "service-worker.js",
+        "importScripts": [],
+        "staticFileGlobsIgnorePatterns": [],
+        "mergeStaticsConfig": false,
+        "minify": false,
+        "staticFileGlobs": [
+          "dist/**/*"
+        ],
+        "stripPrefix": "dist/js/",
+        "filepath": "dist/sw.js",
+        "maximumFileSizeToCacheInBytes": 4194304,
+        "skipWaiting": false,
+        "noWarning": true,
+        "runtimeCaching": [
+          {
+            "handler": "fastest",
+            "urlPattern": {}
+          }
+        ]
+      },
+      "overrides": {},
+      "warnings": []
+    }
+  ],
+  "context": "/Users/al/Desktop/universal-material-ui/src/client",
+  "entry": "./app.jsx",
+  "output": {
+    "path": "/Users/al/Desktop/universal-material-ui/dist/js",
+    "pathinfo": false,
+    "publicPath": "/js/",
+    "chunkFilename": "[hash].[name].js",
+    "filename": "[name].bundle.[hash].js"
+  },
+  "resolve": {
+    "alias": {},
+    "symlinks": true,
+    "plugins": [
+      {
+        "source": "module",
+        "path": "node_modules",
+        "target": "resolve"
+      }
+    ],
+    "modules": [
+      "/Users/al/Desktop/universal-material-ui/src",
+      "/Users/al/Desktop/universal-material-ui",
+      "node_modules"
+    ],
+    "extensions": [
+      ".js",
+      ".jsx",
+      ".json"
+    ]
+  },
+  "resolveLoader": {
+    "symlinks": true,
+    "modules": [
+      "/Users/al/Desktop/universal-material-ui/lib",
+      "/Users/al/Desktop/universal-material-ui"
+    ],
+    "plugins": [
+      {
+        "source": "module",
+        "path": "node_modules",
+        "target": "resolve"
+      }
+    ]
+  },
+  "module": {
+    "rules": [
+      {
+        "_name": "babel",
+        "test": {},
+        "use": [
+          {
+            "loader": "babel-loader"
+          }
+        ]
+      },
+      {
+        "_name": "extract-css-modules",
+        "test": {},
+        "loader": [
+          {
+            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/extract-text-webpack-plugin/dist/loader.js",
+            "options": {
+              "omit": 1,
+              "remove": true,
+              "publicPath": ""
+            }
+          },
+          {
+            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/style-loader/index.js"
+          },
+          {
+            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/css-loader/index.js?modules&localIdentName=[name]__[local]___[hash:base64:5]&-autoprefixer"
+          },
+          {
+            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/postcss-loader/index.js"
+          }
+        ]
+      },
+      {
+        "_name": "extract-css-scss",
+        "test": {},
+        "use": [
+          {
+            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/extract-text-webpack-plugin/dist/loader.js",
+            "options": {
+              "omit": 1,
+              "remove": true,
+              "publicPath": ""
+            }
+          },
+          {
+            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/style-loader/index.js"
+          },
+          {
+            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/css-loader/index.js?modules&localIdentName=[name]__[local]___[hash:base64:5]&-autoprefixer"
+          },
+          {
+            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/postcss-loader/index.js"
+          },
+          {
+            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/sass-loader/lib/loader.js"
+          }
+        ]
+      },
+      {
+        "_name": "extract-css-stylus",
+        "test": {},
+        "use": [
+          {
+            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/extract-text-webpack-plugin/dist/loader.js",
+            "options": {
+              "omit": 1,
+              "remove": true,
+              "publicPath": ""
+            }
+          },
+          {
+            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/style-loader/index.js"
+          },
+          {
+            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/css-loader/index.js?modules&localIdentName=[name]__[local]___[hash:base64:5]&-autoprefixer"
+          },
+          {
+            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/postcss-loader/index.js"
+          },
+          {
+            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/stylus-relative-loader/index.js"
+          }
+        ]
+      },
+      {
+        "_name": "font-woff",
+        "test": {},
+        "use": [
+          {
+            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/url-loader/index.js",
+            "options": {
+              "limit": 1000,
+              "mimetype": "application/font-woff"
+            }
+          },
+          "/Users/al/Desktop/universal-material-ui/node_modules/isomorphic-loader/index.js"
+        ]
+      },
+      {
+        "_name": "font-file",
+        "test": {},
+        "use": [
+          "/Users/al/Desktop/universal-material-ui/node_modules/file-loader/index.js",
+          "/Users/al/Desktop/universal-material-ui/node_modules/isomorphic-loader/index.js"
+        ]
+      },
+      {
+        "_name": "image",
+        "test": {},
+        "use": [
+          {
+            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/electrode-cdn-file-loader/index.js",
+            "options": {
+              "limit": 10000
+            }
+          },
+          "/Users/al/Desktop/universal-material-ui/node_modules/isomorphic-loader/index.js"
+        ]
+      },
+      {
+        "_name": "manifest",
+        "test": {},
+        "use": [
+          {
+            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/file-loader/index.js",
+            "options": {
+              "name": "manifest.json"
+            }
+          },
+          "/Users/al/Desktop/universal-material-ui/node_modules/web-app-manifest-loader/index.js"
+        ]
+      }
+    ]
+  }
+}
+2018-06-01T05:24:59.400Z - info: Disabling NodeSourcePlugin for production
+2018-06-01T05:24:59.401Z - verbose: Final Webpack config {
+  "cache": true,
+  "plugins": [
+    {
+      "options": {
+        "options": {
+          "debug": false
+        },
+        "test": {}
+      },
+      "__name": "LoaderOptionsPlugin"
+    },
+    {
+      "filename": "[name].style.[hash].css",
+      "id": 1,
+      "options": {},
+      "__name": "ExtractTextPlugin"
+    },
+    {
+      "options": {
+        "assetNameRegExp": {},
+        "cssProcessorOptions": {},
+        "canPrint": true
+      },
+      "lastCallInstance": {
+        "options": {
+          "assetProcessors": [
+            {
+              "phase": "compilation.optimize-chunk-assets",
+              "regExp": {}
+            }
+          ],
+          "canPrint": true
+        },
+        "deleteAssetsMap": {}
+      },
+      "__name": "OptimizeCssAssetsPlugin"
+    },
+    {
+      "options": {
+        "size": 4000,
+        "preserve": true,
+        "defer": true
+      },
+      "__name": "CSSSplitWebpackPlugin"
+    },
+    {
+      "options": {
+        "options": {
+          "context": "/Users/al/Desktop/universal-material-ui/src",
+          "stylus": {
+            "use": []
+          }
+        },
+        "test": {}
+      },
+      "__name": "LoaderOptionsPlugin"
+    },
+    {
+      "opts": {
+        "filename": "../server/stats.json",
+        "fields": [
+          "assetsByChunkName",
+          "assets"
+        ]
+      },
+      "__name": "StatsWriterPlugin"
+    },
+    {
+      "config": {
+        "valid": false
+      },
+      "options": {
+        "assetsFile": "../isomorphic-assets.json",
+        "webpackDev": {
+          "url": "http://localhost:2992",
+          "addUrl": false
+        }
+      },
+      "__name": "IsomorphicLoaderPlugin"
+    },
+    {
+      "options": {
+        "prefix": "icons-[hash]/",
+        "emitStats": true,
+        "statsFilename": "../server/iconstats.json",
+        "persistentCache": true,
+        "inject": false,
+        "background": "#FFFFFF",
+        "logo": "/Users/al/Desktop/universal-material-ui/src/client/images/electrode.png",
+        "title": "electrode-react-sample-material-ui",
+        "icons": {
+          "android": true,
+          "appleIcon": true,
+          "appleStartup": true,
+          "coast": false,
+          "favicons": true,
+          "firefox": true,
+          "opengraph": false,
+          "twitter": false,
+          "yandex": false,
+          "windows": false
+        }
+      },
+      "__name": "FaviconsWebpackPlugin"
+    },
+    {
+      "fields": {
+        "short_name": "PWA",
+        "theme_color": "#FFFFFF"
+      },
+      "regex": {},
+      "__name": "AddManifestFieldsPlugin"
+    },
+    {
+      "config": {},
+      "options": {
+        "cacheId": "electrode-react-sample-material-ui",
+        "filename": "service-worker.js",
+        "importScripts": [],
+        "staticFileGlobsIgnorePatterns": [],
+        "mergeStaticsConfig": false,
+        "minify": false,
+        "staticFileGlobs": [
+          "dist/**/*"
+        ],
+        "stripPrefix": "dist/js/",
+        "filepath": "dist/sw.js",
+        "maximumFileSizeToCacheInBytes": 4194304,
+        "skipWaiting": false,
+        "noWarning": true,
+        "runtimeCaching": [
+          {
+            "handler": "fastest",
+            "urlPattern": {}
+          }
+        ]
+      },
+      "overrides": {},
+      "warnings": [],
+      "__name": "SWPrecacheWebpackPlugin"
+    },
+    {
+      "options": {
+        "sourceMap": true,
+        "compress": {
+          "warnings": false
+        }
+      },
+      "__name": "UglifyJsPlugin"
+    },
+    {
+      "resourceRegExp": {},
+      "newContentRegExp": {},
+      "__name": "ContextReplacementPlugin"
+    },
+    {
+      "definitions": {
+        "process.env.NODE_ENV": "\"production\""
+      },
+      "__name": "DefinePlugin"
+    },
+    {
+      "sourceMapFilename": "../map/[file].map",
+      "sourceMappingURLComment": "\n//# sourceMappingURL=http://localhost:2992/dist/map/[url]",
+      "moduleFilenameTemplate": "webpack:///[resourcePath]",
+      "fallbackModuleFilenameTemplate": "webpack:///[resourcePath]?[hash]",
+      "options": {
+        "filename": "../map/[file].map",
+        "append": "\n//# sourceMappingURL=http://localhost:2992/dist/map/[url]"
+      },
+      "__name": "SourceMapDevToolPlugin"
+    },
+    {
+      "isWatch": true,
+      "__name": "FailPlugin"
+    },
+    {
+      "__name": "ProgressPlugin"
+    }
+  ],
+  "context": "/Users/al/Desktop/universal-material-ui/src/client",
+  "entry": "./app.jsx",
+  "output": {
+    "path": "/Users/al/Desktop/universal-material-ui/dist/js",
+    "pathinfo": false,
+    "publicPath": "/js/",
+    "chunkFilename": "[hash].[name].js",
+    "filename": "[name].bundle.[hash].js"
+  },
+  "resolve": {
+    "alias": {},
+    "symlinks": true,
+    "plugins": [
+      {
+        "source": "module",
+        "path": "node_modules",
+        "target": "resolve"
+      }
+    ],
+    "modules": [
+      "/Users/al/Desktop/universal-material-ui/src",
+      "/Users/al/Desktop/universal-material-ui",
+      "node_modules"
+    ],
+    "extensions": [
+      ".js",
+      ".jsx",
+      ".json"
+    ]
+  },
+  "resolveLoader": {
+    "symlinks": true,
+    "modules": [
+      "/Users/al/Desktop/universal-material-ui/lib",
+      "/Users/al/Desktop/universal-material-ui"
+    ],
+    "plugins": [
+      {
+        "source": "module",
+        "path": "node_modules",
+        "target": "resolve"
+      }
+    ]
+  },
+  "module": {
+    "rules": [
+      {
+        "test": {},
+        "use": [
+          {
+            "loader": "babel-loader"
+          }
+        ]
+      },
+      {
+        "test": {},
+        "loader": [
+          {
+            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/extract-text-webpack-plugin/dist/loader.js",
+            "options": {
+              "omit": 1,
+              "remove": true,
+              "publicPath": ""
+            }
+          },
+          {
+            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/style-loader/index.js"
+          },
+          {
+            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/css-loader/index.js?modules&localIdentName=[name]__[local]___[hash:base64:5]&-autoprefixer"
+          },
+          {
+            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/postcss-loader/index.js"
+          }
+        ]
+      },
+      {
+        "test": {},
+        "use": [
+          {
+            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/extract-text-webpack-plugin/dist/loader.js",
+            "options": {
+              "omit": 1,
+              "remove": true,
+              "publicPath": ""
+            }
+          },
+          {
+            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/style-loader/index.js"
+          },
+          {
+            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/css-loader/index.js?modules&localIdentName=[name]__[local]___[hash:base64:5]&-autoprefixer"
+          },
+          {
+            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/postcss-loader/index.js"
+          },
+          {
+            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/sass-loader/lib/loader.js"
+          }
+        ]
+      },
+      {
+        "test": {},
+        "use": [
+          {
+            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/extract-text-webpack-plugin/dist/loader.js",
+            "options": {
+              "omit": 1,
+              "remove": true,
+              "publicPath": ""
+            }
+          },
+          {
+            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/style-loader/index.js"
+          },
+          {
+            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/css-loader/index.js?modules&localIdentName=[name]__[local]___[hash:base64:5]&-autoprefixer"
+          },
+          {
+            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/postcss-loader/index.js"
+          },
+          {
+            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/stylus-relative-loader/index.js"
+          }
+        ]
+      },
+      {
+        "test": {},
+        "use": [
+          {
+            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/url-loader/index.js",
+            "options": {
+              "limit": 1000,
+              "mimetype": "application/font-woff"
+            }
+          },
+          "/Users/al/Desktop/universal-material-ui/node_modules/isomorphic-loader/index.js"
+        ]
+      },
+      {
+        "test": {},
+        "use": [
+          "/Users/al/Desktop/universal-material-ui/node_modules/file-loader/index.js",
+          "/Users/al/Desktop/universal-material-ui/node_modules/isomorphic-loader/index.js"
+        ]
+      },
+      {
+        "test": {},
+        "use": [
+          {
+            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/electrode-cdn-file-loader/index.js",
+            "options": {
+              "limit": 10000
+            }
+          },
+          "/Users/al/Desktop/universal-material-ui/node_modules/isomorphic-loader/index.js"
+        ]
+      },
+      {
+        "test": {},
+        "use": [
+          {
+            "loader": "/Users/al/Desktop/universal-material-ui/node_modules/file-loader/index.js",
+            "options": {
+              "name": "manifest.json"
+            }
+          },
+          "/Users/al/Desktop/universal-material-ui/node_modules/web-app-manifest-loader/index.js"
+        ]
+      }
+    ]
+  },
+  "node": false
+}
+2018-06-01T05:25:13.617Z - info: APP_SRC_DIR set to lib/
