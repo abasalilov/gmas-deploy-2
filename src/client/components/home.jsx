@@ -55,10 +55,11 @@ const HomeComponent = props => {
 
           <section className={custom.header}>
             <h2 className={skeleton.title}>Login</h2>
+            <Login />
           </section>
 
           <section className={custom.header}>
-            <Login />
+            <div>about us</div>
           </section>
         </div>
       </Provider>

@@ -16,13 +16,24 @@ import injectTapEventPlugin from "react-tap-event-plugin";
 // The webapp's full HTML will check and call it once the js-content
 // DOM is created.
 //
+/* eslint-disable */
 
 window.webappStart = () => {
   injectTapEventPlugin(); // https://github.com/callemall/material-ui/issues/4670
   const initialState = window.__PRELOADED_STATE__;
   const jsContent = document.querySelector(".js-content");
   const reactStart = initialState && jsContent.innerHTML ? hydrate : render;
-
+  const bod = document.querySelector("body");
+  bod.style.height = "100%";
+  bod.style.margin = "0";
+  const ht = document.querySelector("html");
+  ht.style.height = "100%";
+  jsContent.style.position = "abosolute";
+  jsContent.style.left = "0";
+  jsContent.style.top = "0";
+  jsContent.style.height = "100%";
+  jsContent.style.width = "100%";
+  /* eslint-enable */
   const store = createStore(rootReducer, initialState);
   reactStart(
     <Provider store={store}>
@@ -31,3 +42,4 @@ window.webappStart = () => {
     jsContent
   );
 };
+/* eslint-enable */

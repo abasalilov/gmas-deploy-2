@@ -59,6 +59,7 @@
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-tap-event-plugin": "^3.0.3",
+    "redux-form": "^7.3.0",
     "xclap": "^0.2.23"
   },
   "devDependencies": {},

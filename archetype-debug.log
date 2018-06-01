@@ -1,8 +1,8 @@
-2018-06-01T15:53:48.151Z - info: No custom webpack config webpack.config.dev.js found in dirs CWD; CWD/archetype/config/webpack
-2018-06-01T15:53:48.162Z - info: Entry point configuration /Users/al/Desktop/gmas-deploy-2/src/client/entry.config.js is not found, using default entry point...
-2018-06-01T15:53:48.891Z - info: PWA enabled with config from /Users/al/Desktop/gmas-deploy-2/config/sw-config.js
-2018-06-01T15:53:49.063Z - info: Not disabling NodeSourcePlugin.  NODE_ENV: 'development'
-2018-06-01T15:53:49.065Z - verbose: Final Webpack config {
+2018-06-01T16:48:10.207Z - info: No custom webpack config webpack.config.dev.js found in dirs CWD; CWD/archetype/config/webpack
+2018-06-01T16:48:10.218Z - info: Entry point configuration /Users/al/Desktop/gmas-deploy-2/src/client/entry.config.js is not found, using default entry point...
+2018-06-01T16:48:10.760Z - info: PWA enabled with config from /Users/al/Desktop/gmas-deploy-2/config/sw-config.js
+2018-06-01T16:48:10.854Z - info: Not disabling NodeSourcePlugin.  NODE_ENV: 'development'
+2018-06-01T16:48:10.854Z - verbose: Final Webpack config {
   "cache": true,
   "plugins": [
     {
@@ -345,44 +345,20 @@
     }
   }
 }
-2018-06-01T15:54:02.043Z - info: APP_SRC_DIR set to src/
-2018-06-01T15:54:49.208Z - info: APP_SRC_DIR set to src/
-2018-06-01T15:55:48.660Z - info: APP_SRC_DIR set to src/
-2018-06-01T15:58:06.572Z - info: APP_SRC_DIR set to src/
-2018-06-01T15:58:46.504Z - info: APP_SRC_DIR set to src/
-2018-06-01T15:59:05.999Z - info: APP_SRC_DIR set to src/
-2018-06-01T16:12:18.810Z - info: APP_SRC_DIR set to src/
-2018-06-01T16:12:22.071Z - info: APP_SRC_DIR set to src/
-2018-06-01T16:13:10.306Z - info: APP_SRC_DIR set to src/
-2018-06-01T16:13:23.389Z - info: APP_SRC_DIR set to src/
-2018-06-01T16:14:10.622Z - info: APP_SRC_DIR set to src/
-2018-06-01T16:14:13.648Z - info: APP_SRC_DIR set to src/
-2018-06-01T16:15:24.654Z - info: APP_SRC_DIR set to src/
-2018-06-01T16:16:20.254Z - info: APP_SRC_DIR set to src/
-2018-06-01T16:18:36.208Z - info: APP_SRC_DIR set to src/
-2018-06-01T16:19:34.022Z - info: APP_SRC_DIR set to src/
-2018-06-01T16:19:44.808Z - info: APP_SRC_DIR set to src/
-2018-06-01T16:19:58.363Z - info: APP_SRC_DIR set to src/
-2018-06-01T16:21:11.170Z - info: APP_SRC_DIR set to src/
-2018-06-01T16:21:34.230Z - info: APP_SRC_DIR set to src/
-2018-06-01T16:22:04.402Z - info: APP_SRC_DIR set to src/
-2018-06-01T16:22:15.743Z - info: APP_SRC_DIR set to src/
-2018-06-01T16:23:00.047Z - info: APP_SRC_DIR set to src/
-2018-06-01T16:23:23.172Z - info: APP_SRC_DIR set to src/
-2018-06-01T16:23:26.057Z - info: APP_SRC_DIR set to src/
-2018-06-01T16:27:40.433Z - info: APP_SRC_DIR set to src/
-2018-06-01T16:27:53.952Z - info: APP_SRC_DIR set to src/
-2018-06-01T16:28:23.782Z - info: APP_SRC_DIR set to src/
-2018-06-01T16:28:28.892Z - info: APP_SRC_DIR set to src/
-2018-06-01T16:28:39.974Z - info: APP_SRC_DIR set to src/
-2018-06-01T16:30:59.660Z - info: APP_SRC_DIR set to src/
-2018-06-01T16:34:19.665Z - info: APP_SRC_DIR set to src/
-2018-06-01T16:34:33.520Z - info: APP_SRC_DIR set to src/
-2018-06-01T16:37:45.571Z - info: APP_SRC_DIR set to src/
-2018-06-01T16:38:30.744Z - info: APP_SRC_DIR set to src/
-2018-06-01T16:38:37.387Z - info: APP_SRC_DIR set to src/
-2018-06-01T16:38:46.365Z - info: APP_SRC_DIR set to src/
-2018-06-01T16:39:29.883Z - info: APP_SRC_DIR set to src/
-2018-06-01T16:39:39.035Z - info: APP_SRC_DIR set to src/
-2018-06-01T16:40:06.257Z - info: APP_SRC_DIR set to src/
-2018-06-01T16:40:39.036Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:48:23.822Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:49:22.874Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:49:43.491Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:49:56.879Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:50:08.061Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:50:22.847Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:50:38.345Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:52:11.606Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:52:16.273Z - info: APP_SRC_DIR set to src/
+2018-06-01T16:53:09.823Z - info: APP_SRC_DIR set to src/
+2018-06-01T19:55:14.218Z - info: APP_SRC_DIR set to src/
+2018-06-01T19:55:24.675Z - info: APP_SRC_DIR set to src/
+2018-06-01T19:55:58.505Z - info: APP_SRC_DIR set to src/
+2018-06-01T19:56:04.692Z - info: APP_SRC_DIR set to src/
+2018-06-01T19:56:45.986Z - info: APP_SRC_DIR set to src/
+2018-06-01T19:56:52.915Z - info: APP_SRC_DIR set to src/
+2018-06-01T21:28:14.179Z - info: APP_SRC_DIR set to src/
