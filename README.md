@@ -1,192 +1,67 @@
-# electrode-react-sample-material-ui
+<h1 align="center">Razzle Material-UI Styled Example</h1>
 
-[![Dependency Status][daviddm-image]][daviddm-url] [![devDependency Status][daviddm-dev-image]][daviddm-dev-url]
+<p align="center">
+	<a title="Node.js" href="https://nodejs.org/en/"><img alt="Node.js" src="https://camo.githubusercontent.com/9c24355bb3afbff914503b663ade7beb341079fa/68747470733a2f2f6e6f64656a732e6f72672f7374617469632f696d616765732f6c6f676f2d6c696768742e737667" width="104.49" height="64"></a>
+	&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<a title="Yarn" href="https://yarnpkg.com/lang/en/"><img alt="Yarn" src="https://raw.githubusercontent.com/yarnpkg/assets/master/yarn-kitten-full.svghttps://raw.githubusercontent.com/yarnpkg/assets/master/yarn-kitten-full.png" width="142.708" height="64"></a>
+	&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<a title="Razzle" href="https://github.com/jaredpalmer/razzle"><img alt="Razzle" src="https://cloud.githubusercontent.com/assets/4060187/26326651/1fc65eca-3f0a-11e7-9f45-02c2bf950418.png" width="222.813" height="64"></a>
+	&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<a title="Express" href="https://expressjs.com/"><img alt="Express" src="https://cdn.worldvectorlogo.com/logos/express-109.svg" width="219.771" height="64"></a>
+</p>
 
-> Electrode Universal React Sample App with [material-ui] components
+<p align="center">
+	<a title="React" href="https://facebook.github.io/react/"><img alt="React" src="https://cdn.worldvectorlogo.com/logos/react.svg" width="267.135" height="240"></a>
+	&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<a title="Styled Components" href="https://www.styled-components.com/"><img alt="Styled Components" src="https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png" width="240" height="240"></a>
+	&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<a title="Material-UI" href="http://www.material-ui.com/#/"><img alt="Material-UI" src="https://cdn.worldvectorlogo.com/logos/material-ui.svg" width="295.417" height="240"></a>
+</p>
 
-![screenshot][screenshot]
+<p align="center">
+	<br><a title="CodeRelease.io" href="https://coderelease.io/">CodeRelease.io</a>
+	<br>⭐ Star and get notified about new releases via email.
+</p>
 
-## Installation
+## Features
+- <a title="Razzle" href="https://github.com/jaredpalmer/razzle"><img alt="Razzle" src="https://cloud.githubusercontent.com/assets/4060187/26326651/1fc65eca-3f0a-11e7-9f45-02c2bf950418.png" width="" height="18"></a>
+	- **S**erver **S**ide **R**endering
+	- **H**ot **M**odule **R**eplacement for both client and server side <a title="React" href="https://facebook.github.io/react/"><img alt="React" src="https://cdn.worldvectorlogo.com/logos/react.svg" width="" height="18"></a>[React](https://facebook.github.io/react/) components
+	- Up to date JavaScript ([**E**CMA](https://en.wikipedia.org/wiki/Ecma_International)**S**cript 6 (2015)) support
+	- Single route static site generation
+- <a title="Express" href="https://expressjs.com/"><img alt="Express" src="https://cdn.worldvectorlogo.com/logos/express-109.svg" width="" height="18"></a> server with gzip [compression](https://github.com/expressjs/compression)
+	- HTML and inline CSS and JS minification with [HTMLMinifier](https://github.com/kangax/html-minifier)
+	- <a title="Styled Components" href="https://www.styled-components.com/"><img alt="Styled Components" src="https://raw.githubusercontent.com/styled-components/brand/master/styled-components.png" width="18" height="18"></a> [Styled Components](https://www.styled-components.com/)
+	- <a title="Material-UI" href="http://www.material-ui.com/#/"><img alt="Material-UI" src="https://cdn.worldvectorlogo.com/logos/material-ui.svg" width="" height="18"></a> [Material-UI](http://www.material-ui.com/#/)
 
-### Prerequisites
+## Getting Started
+- Initial steps
+	- Install <a title="Node.js" href="https://nodejs.org/en/"><img alt="Node.js" src="https://camo.githubusercontent.com/9c24355bb3afbff914503b663ade7beb341079fa/68747470733a2f2f6e6f64656a732e6f72672f7374617469632f696d616765732f6c6f676f2d6c696768742e737667" width="" height="18"></a> and <a title="Yarn" href="https://yarnpkg.com/lang/en/"><img alt="Yarn" src="https://raw.githubusercontent.com/yarnpkg/assets/master/yarn-kitten-full.svghttps://raw.githubusercontent.com/yarnpkg/assets/master/yarn-kitten-full.png" width="" height="18"></a>.
+	- [Download](https://github.com/kireerik/razzle-material-ui-styled-example/archive/master.zip) or [clone](github-windows://openRepo/https://github.com/kireerik/razzle-material-ui-styled-example) this repository.
+	- Open a command prompt in the project folder.
 
-Make sure you have installed NodeJS >= 4.x and npm >= 3.x, and [clap-cli].
+> Install dependencies:
+> ```shell
+> yarn install
+> ```
 
-```bash
-$ node -v
-v6.6.0
-$ npm -v
-3.10.3
-$ npm install -g clap-cli
+Start the server:
+> ```shell
+> yarn start
+> ```
+> This command initiates a build process and starts the server in production mode.
+
+Visit http://localhost/ to access the web application.
+
+### Development
+Start the server in development mode:
+```shell
+yarn dev
 ```
 
-### Check it out
-
-To try out this ready made sample app, use git to clone the repo:
-
-```sh
-$ git clone https://github.com/electrode-io/electrode.git
-$ cd electrode
-$ npm install
-$ npm run bootstrap
-$ clap samples-local
-$ cd samples/universal-material-ui
-$ npm install
-$ clap dev
+### Single route static site generation
+Generate a static site:
+```shell
+yarn static
 ```
+Open the `index.html` within the `static` folder to access the web application. The folder name can be modified with the `RAZZLE_STATIC_PATH` environment variable.
 
-Now navigate your browser to `http://localhost:3000` to see the sample app with [material-ui] components.
-
-## About
-
-This app was created with the following steps.
-
-
-### Generate Electrode App
-
-First part of the process is to generate an Electrode Universal App using the [yeoman] generator.  Follow the steps below:
-
-1. First generate the Electrode Universal App with the following commands:
-
-```bash
-$ npm install -g yo generator-electrode
-$ mkdir electrode-react-sample-material-ui
-$ cd electrode-react-sample-material-ui
-$ yo electrode
-# ... answer questions and wait for app to be generated and npm install completed ...
-```
-
-2. Run `clap dev` in the newly generated app
-3. Navigate to `http://localhost:3000` to make sure app is working.
-
-### Add [material-ui]
-
-Second part of the process is to add [material-ui] dependencies.  Follow the steps below:
-
-1. Stop the app and install [material-ui] dependencies
-
-```bash
-$ npm install material-ui react-tap-event-plugin --save
-```
-
-1. Restart `clap dev` and reload browser to make sure things are still working.
-1. Add [material-ui]'s required font *Roboto* to `src/server/views/index-view.js`
-1. Update `src/client/styles/base.css` with styles for [material-ui].
-1. Test [material-ui] component by adding a [RaisedButton] to `src/client/components/home.jsx`
-1. Watch [webpack-dev-server] update your bundle and refresh browser to see changes.
-1. Add `global.navigator.userAgent` to `src/server/index.js` as required by [material-ui] for [Server Rendering].
-1. Watch [webpack-dev-server] update your bundle and refresh browser to see changes.
-
-### Add [material-ui] Examples
-
-Now we are ready to add some of the [material-ui examples] to the app.  
-
-> Note that the examples are written with babel stage-1 which is not supported in Electrode so you might have to rewrite some of them.
-
-#### Enable tapping
-
-First we have to add the resolution for this issue https://github.com/callemall/material-ui/issues/4670.
-
-Add the following code to `src/client/app.jsx`
-
-```js
-import injectTapEventPlugin from "react-tap-event-plugin";
-
-window.webappStart = () => {
-  injectTapEventPlugin(); // https://github.com/callemall/material-ui/issues/4670
-
-};
-```
-
-#### IconMenu [AppBar example]
-
-First add the IconMenu [AppBar example] by following the steps below.
-
-1. Copy the source from the example into a file `src/client/components/AppBarExampleIconMenu.jsx`
-2. Replace the `Hello Electrode` and the RaisedButton content in `src/client/components/home.jsx` with `<AppBarExampleIconMenu />`;
-3. Watch [webpack-dev-server] update your bundle and refresh browser to see changes.
-4. If the AppBar shows up, click on the right menu button, you should see a menu pops up.
-
-#### [BottomNavigation example]
-
-Next add the [BottomNavigation example]
-
-1. Copy the source from the example into a file `src/client/components/BottomNavigationExampleSimple.jsx`
-2. Import the component in `src/client/components/home.jsx` and add it to `render` after the `AppBarExampleIconMenu` component.
-3. Watch [webpack-dev-server] update your bundle and refresh browser to see changes.
-4. You should see AppBar and BottomNavigation show up.  You should be able to interact with the buttons on the BottomNavigation component.
-
-#### [Card example]
-
-In this section we add the [Card example].
-
-1. Copy the source from the [Card example] into a file `src/client/components/CardExampleWithAvatar.jsx`
-2. Import the component in `src/client/components/home.jsx` and add it to `render` after the `AppBarExampleIconMenu` component.
-3. Watch [webpack-dev-server] update your bundle and refresh browser to see changes.
-4. You should see Card show up but with broken images
-
-> You can replace the image URLs with the full URLs to the images by adding `http://www.material-ui.com/` to them to fix the broken images, but we will explore isomorphic images next.
-
-#### Isomorphic Images
-
-Electrode core comes with isomorphic images support built in using [isomorphic-loader].  In this section we explore using that feature to load the images for the [Card example].
-
-1. Create a directory `src/client/images` and copy the following images there
-  - http://www.material-ui.com/images/nature-600-337.jpg
-  - http://www.material-ui.com/images/jsa-128.jpg (Or your own favorite 128x128 Avatar image)
-    - Note that in my sample I use `jchip-128.jpg` as my avatar.
-1. In `src/client/components/CardExampleWithAvatar.jsx`, import the images:
-
-  ```js
-  import natureJpg from "../images/nature-600-337.jpg";
-  import avatarJpg from "../images/jsa-128.jpg";
-  ```
-
-1. Replace the URLs for `avatar` and `CarMedia` img `src`, as follows:
-
-```
-...
-  avatar={avatarJpg}
-...
-  src={natureJpg}
-```
-
-1. In `src/server/index.js`, activate [isomorphic-loader]'s `extend-require` by changing the last line to:
-
-```js
-const config = require("electrode-confippet").config;
-const staticPathsDecor = require("electrode-static-paths");
-const support = require("electrode-archetype-react-app/support");
-
-support.load({
-  isomorphicExtendRequire: true
-}).then(() => {
-  require("electrode-server")(config, [staticPathsDecor()]);
-});
-
-```
-
-1. Watch [webpack-dev-server] update your bundle and refresh browser to see changes.
-
-> Note that you will see the message `Warning: Unknown prop onTouchTap on <button> tag.` show up on the server side rendering because of the tapping event plugin, which we don't need on server anyways.
-
-## License
-
-Apache-2.0 © [Joel Chen](https://github.com/jchip)
-
-[daviddm-image]: https://david-dm.org/electrode-io/electrode/status.svg?path=samples/universal-material-ui
-[daviddm-url]: https://david-dm.org/electrode-io/electrode?path=samples/universal-material-ui
-[daviddm-dev-image]:https://david-dm.org/electrode-io/electrode/dev-status.svg?path=samples/universal-material-ui
-[daviddm-dev-url]:https://david-dm.org/electrode-io/electrode?path=samples/universal-material-ui?type-dev
-[material-ui]: http://www.material-ui.com/
-[RaisedButton]: http://www.material-ui.com/#/components/raised-button
-[webpack-dev-server]: https://webpack.github.io/docs/webpack-dev-server.html
-[Server Rendering]: http://www.material-ui.com/#/get-started/server-rendering
-[clap-cli]: https://www.npmjs.com/package/clap-cli
-[material-ui examples]: http://www.material-ui.com/#/components/app-bar
-[AppBar example]:  http://www.material-ui.com/#/components/app-bar
-[BottomNavigation example]: http://www.material-ui.com/#/components/bottom-navigation
-[yeoman]: http://yeoman.io/
-[Card example]: http://www.material-ui.com/#/components/card
-[isomorphic-loader]: https://github.com/electrode-io/isomorphic-loader
-[screenshot]: https://cloud.githubusercontent.com/assets/4782871/22477359/996f3d36-e79a-11e6-8d93-377b1ad1f2f3.png
+## Idea behind the example
+This project is based on the [basic razzle example](https://github.com/jaredpalmer/razzle/tree/master/examples/basic). This repository also satisfies the following 2 entry points requred by Razzle:
+- `src/index.js` for the server
+- `src/client.js` for the browser
