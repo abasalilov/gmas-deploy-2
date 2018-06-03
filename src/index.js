@@ -1,28 +1,21 @@
-import express from 'express'
-import server from './server'
-
-import generateStaticSite from './static'
+import express from 'express';
+import app from './server';
 
 if (module.hot) {
-	module.hot.accept('./server')
-	console.info('Server-side HMR Enabled.\n')
+  module.hot.accept('./server', function() {
+    console.log('🔁  HMR Reloading `./server`...');
+  });
+  console.info('✅  Server-side HMR Enabled!');
 }
 
-const mainServer = express()
-	.use((request, response) => server.handle(request, response))
+const port = process.env.PORT || 3000;
 
-, serverInstance = mainServer
-	.listen(process.env.PORT, error => {
-		if (error) {
-			console.error(error)
-
-			return
-		}
-
-		console.log('Server started at ' + process.env.HOST + ':' + process.env.PORT + '.\n')
-
-		if (process.env.RAZZLE_STATIC)
-			generateStaticSite(serverInstance)
-	})
-
-export default mainServer
+export default express()
+  .use((req, res) => app.handle(req, res))
+  .listen(port, function(err) {
+    if (err) {
+      console.error(err);
+      return;
+    }
+    console.log(`> Started on port ${port}`);
+  });
